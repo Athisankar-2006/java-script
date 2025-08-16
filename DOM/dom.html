@@ -1,9 +1,14 @@
 <!-- here are 5 question -->
 
 <style>
+.full{
+  text-align: center;
+  min-height: 100vh;
+}
+
 
     .highlight{
-        background-color: aqua;
+        background: linear-gradient(rgb(0, 72, 0),rgb(114, 218, 100));
     }
 </style>
 
@@ -17,13 +22,14 @@
     <title>Dom practice</title>
 </head>
 <body>
+  <div class="full">
 
 <h1>java script DOM example</h1>
 
 <hr>
 
     <!-- example 1 -->
-    <h3>accessing DOM element</h3>
+    <h3>1.accessing DOM element</h3>
 
     <p id="para">this is the paragrap click the button to change me!!</p>
      <button id="btn">click</button>
@@ -32,7 +38,7 @@
     
     <!-- example2 -->
      
-     <h3>Traversing the dom</h3>
+     <h3>2.Traversing the dom</h3>
      <ul id="city">
         <li class="firstli">tokyo</li>
         <li>london</li>
@@ -50,7 +56,7 @@
     <!-- example3 -->
      
     <section>
-     <h3>manipulating dom element</h3>
+     <h3>3.manipulating dom element</h3>
      <div id="corder">
         order: <span id="ctype">latte</span>
      </div>
@@ -62,7 +68,7 @@
 
     
     <!-- example4 -->
-     <h3>creating and inserting the element</h3>
+     <h3>4.creating and inserting the element</h3>
     <section>
      
      <ul id="shopping">
@@ -77,8 +83,8 @@
 
 
     
-    <!-- example4 -->
-     <h3>removing dom element</h3>
+    <!-- example5 -->
+     <h3>5.removing dom element</h3>
     <section>
     
      <ul id="delete">
@@ -90,6 +96,68 @@
     
      </section>
 <hr>
+
+  <section>
+    <!-- example 6  -->
+       <h2>Event handling in the DOM</h2>
+      <button id="cmb">click me!</button>
+     </section>
+<hr>
+
+
+
+  <section>
+    <!-- example 7  -->
+       <h2>Event delegation</h2>
+      <ul id="teatypes">
+        <li class="teaitems">green tea</li>
+        <li class="teaitems">black tea</li>
+        <li class="teaitems">oolong tea</li>
+      </ul>
+      <p>click on any tea to select it !</p>
+     </section>
+<hr>
+
+
+    <section>
+    <!-- example 8  -->
+       <h2>Form handling</h2>
+      <form id="feedbackForm">
+        <label for="">your Feedback:</label>
+        <input type="text" id="fbinput" placeholder="Enter Feedback">
+
+        <button type="submit">submit Feedback</button>
+      </form>
+      <p id="FeedbackDisplay"></p>
+     </section>
+<hr>
+
+
+
+    <section>
+    <!-- example 9  -->
+       <h2>dom content loaded</h2>
+      
+      <p id="domload">waiting for dom content loaded...</p>
+     </section>
+<hr>
+
+
+    <section>
+    <!-- example 10 -->
+       <h2>css class manipulation</h2>
+      
+       <p id="discrition">this text will change the color</p>
+        <button id="togglehighlight">toggle highlight</button>
+      
+     </section>
+<hr>
+
+
+
+</div>
+
+
 
 
 <script src="script.js"></script> 

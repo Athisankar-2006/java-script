@@ -45,3 +45,47 @@ document.getElementById("removing").addEventListener("click",function(){
     let items=document.getElementById("delete");
     items.lastElementChild.remove()
 })
+
+
+//example 6
+
+document.getElementById("cmb").addEventListener("click",function(){
+    alert("vanakam da mapla serverla irunthu!!");
+})
+
+
+//example 7
+ document.getElementById("teatypes").addEventListener("click",function(event){
+    
+        if(event.target && event.target.matches('.teaitems')){
+            alert("you selected:"+event.target.textContent)
+        }
+    
+
+ })
+
+
+ //example 8
+
+ document.getElementById("feedbackForm").
+ addEventListener("submit",function(event){
+    event.preventDefault();
+
+    let fb=document.getElementById("fbinput").value;
+    console.log(fb)
+    document.getElementById("FeedbackDisplay").textContent=`feed back is:${fb}`;
+
+ });
+
+ //example 9
+
+  document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById("domload").textContent="dom fully loaded"
+  })
+
+  //example  10
+
+  document.getElementById("togglehighlight").addEventListener("click",function(){
+    let addclass=document.getElementById("discrition")
+    addclass.classList.toggle("highlight")
+  })
