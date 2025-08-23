@@ -1,0 +1,95 @@
+
+<style>
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    border-radius: 20px;
+    background: radial-gradient(rgb(37, 32, 61), rgb(0, 0, 0));
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+
+}
+
+.btn1{
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(rgb(37, 22, 97),red);
+    
+}
+.btn2{
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(rgb(37, 22, 97),rgb(0, 153, 255));
+}
+
+.btn3{
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(rgb(37, 22, 97),rgb(0, 255, 0));
+}
+
+
+
+
+
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change color</title>
+</head>
+<body>
+<div>
+    <button id="btn1">FIRE</button>
+    <button id="btn2">WATER</button>
+    <button id="btn3">HILLS</button>
+    </div>
+</body>
+
+<script>
+
+    let fire=document.getElementById("btn1")
+    fire.addEventListener('click',()=>{
+         fire.className="btn1"
+         water.className=""
+         hills.className=""
+    })
+
+    let water=document.getElementById("btn2")
+    water.addEventListener('click',()=>{
+         water.className="btn2"
+         fire.className=""
+         hills.className=""
+    })
+   
+
+    let hills=document.getElementById("btn3")
+    hills.addEventListener('click',()=>{
+         hills.className="btn3"
+         water.className=""
+         fire.className=""
+    })
+   
+   
+</script>
+</html>

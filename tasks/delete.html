@@ -1,0 +1,99 @@
+<style>
+body{
+    background: linear-gradient(to right,rgb(85, 85, 145),rgb(42, 28, 28),rgb(71, 59, 61));
+  
+ 
+}
+
+.list{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 360px;
+    max-width: 700px;
+    border-radius: 20px;
+}
+button{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+
+}
+
+
+
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete items</title>
+</head>
+<body>
+
+<ul class="list">
+<h1 >one</h1>
+<button onclick="deleteitems(event)">delete</button>
+
+</ul>
+
+
+<ul class="list">
+<h1 >two</h1>
+<button onclick="deleteitems(event)">delete</button>
+
+</ul>
+
+
+<ul class="list">
+<h1 >three</h1>
+<button onclick="deleteitems(event)">delete</button>
+
+</ul>
+
+
+
+
+<ul class="list">
+<h1 >four</h1>
+<button onclick="deleteitems(event)">delete</button>
+
+</ul>
+
+<ul class="list">
+<h1 >five</h1>
+<button onclick="deleteitems(event)">delete</button>
+
+</ul>
+
+
+<ul class="list">
+<h1 >six</h1>
+<button onclick="deleteitems(event)">delete</button>
+
+</ul>
+
+
+</body>
+<script>
+
+
+
+function deleteitems(event){
+    event.target.parentNode.remove();
+   
+}
+
+
+
+</script>
+
+
+
+</html>

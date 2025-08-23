@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change name</title>
+</head>
+<body>
+    <h2 style="color: blueviolet;"> click the button to change the name </h2>
+    <h1 id="h">name</h1>
+    <button onclick="namee(event)">Iron man</button>
+    <button onclick="namee(event)">Hulk</button>
+    <button onclick="namee(event)">spider man</button>
+
+
+</body>
+
+
+<script>
+
+    var h1=document.getElementById("h");
+    function namee(event){
+        h1.textContent=event.target.textContent
+        
+
+    }
+</script>
+</html>

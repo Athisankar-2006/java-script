@@ -1,0 +1,50 @@
+
+<style>
+
+
+button{
+    color: white;
+    background-color: rgb(12, 6, 7);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+
+
+}
+h2{
+    color: rgb(98, 66, 188);
+    
+    
+}
+
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create a new element</title>
+</head>
+<body>
+
+
+<button onclick="update()">Click me</button>
+    <h2 id="new"></h2>
+    
+    
+</body>
+
+
+<script>
+    var h1= document.getElementById("new");
+    function update(){
+        var created=document.createElement("h2")
+        created.textContent="Hellow"
+        h1.append(created)
+    }
+</script>
+</html>

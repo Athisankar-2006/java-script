@@ -1,0 +1,115 @@
+
+<style>
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    background-color: rgb(124, 82, 82);
+    width: 50vw;
+    height: 50vh;
+    border-radius: 20px;
+    position: relative;
+    /* display: flex;
+    justify-content: center; */
+
+}
+.two{
+    background-color:rgb(124, 82, 82);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#in{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border-style: none;
+    outline-style: none;
+    border: 1px solid;
+
+
+    /* position: absolute;
+    margin-left: 50px;
+    margin-top: 30px; */
+
+    
+
+}
+
+.three{
+    background-color: rgb(255, 255, 255);
+    height: 60%;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+
+}
+
+h3{
+
+position: absolute;
+
+margin-left: 10px;
+margin-right: 10px;
+padding: 2px;
+    
+}
+
+
+</style>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on key up keyword</title>
+</head>
+<body>
+
+<div class="one">
+
+  <div class="two">
+  <input  id="in" onkeyup="update()" placeholder="Type on your mind..">
+  </div>
+    
+    <div class="three">
+
+        <h3 id="head3">  </h3>
+    </div>
+    
+    
+
+    </div>
+</body>
+
+
+
+
+<script>
+
+
+let h3=document.getElementById("head3")
+let inputt=document.getElementById("in")
+
+
+function update(){
+    h3.textContent=inputt.value
+}
+
+
+     
+
+
+</script>
+</html>
