@@ -1,0 +1,125 @@
+*{
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(29, 24, 24);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background-color: rgb(29, 31, 31);
+     /* display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    border-radius: 10px;
+    /* position: relative; */
+     border-radius: 10px;
+     min-height: auto;
+     padding: 20px;
+     box-shadow: inset 10px 10px 12px;
+
+}
+
+
+.head1{
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+
+}
+
+
+.form1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+
+}
+
+.form1 input{
+    padding: 17px;
+     width: 70%; 
+     border: 1px solid black;
+     border-radius: 2px;
+     outline: none;
+     font-size: 1rem;
+     background-color: rgb(2, 2, 2);
+     color: white;
+     
+}
+
+.form1 button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(83, 58, 180);
+    border-radius: 2px;
+    outline: none;
+    border-style: none;
+    border: 1px solid rgb(18, 15, 15);
+    margin-left: 10px;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 1rem;
+    
+}
+
+.form1 button:hover{
+    background-color: rgb(67, 62, 159);
+    
+}
+
+
+
+
+ .text{
+    width: 70%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.text:hover{
+     text-decoration: line-through;
+}
+
+
+.btn1{
+    background-color: rgb(211, 29, 29);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    border-style: none;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+
+} 
+
+
+.btn1:hover{
+    background-color: brown;
+}
+
+.list1-container{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    max-height: auto;
+    max-width: 800px;
+
+}
