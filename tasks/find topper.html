@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <h2> student score App</h2>
+        <input type="text" id="name" placeholder="Enter student name">
+        <input type="number" id="marks" placeholder="Enter marks">
+        <button onclick="addstudent()">Add student</button>
+        <button onclick="calres()">calculate avg & topper</button>
+
+        <div class="result" id="output"></div>
+
+    </div>
+    
+ 
+
+
+    <script>
+        let students=[];
+
+        function addstudent(){
+            const name=document.getElementById("name").value;
+            const marks=parseFloat(document.getElementById("marks").value);
+            if(name && !isNaN(marks)){
+                students.push({name,marks});
+                document.getElementById("output").innerHTML=`<p> student ${name} with marks ${marks} added.</p>`;
+                document.getElementById("name").value="";
+                document.getElementById("marks").value="";
+            }else{
+                alert("please enter valid name and marks!");
+
+            }
+
+            
+
+        }
+
+
+        function calres(){
+            if(students.length ===0){
+                document.getElementById("output").innerHTML="no student added yet."
+                return
+            }
+
+            let total=students.reduce((sum,student)=>sum+student,marks,0);
+            let avg= total/students.length;
+            let topper=[...students].sort((a,b)=>b.marks-a.marks)[0];
+
+            document.getElementById("output").innerHTML=`
+            <p> <b>Average marks:</b>${avg}</p>
+            <p><b>Tooper:</b>${topper.name} (${topper.marks})</p>
+            `
+
+        }
+
+       
+    </script>
+</body>
+
+</html>
