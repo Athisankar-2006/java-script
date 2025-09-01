@@ -1,3 +1,88 @@
+<style>
+
+*{
+    padding: none;
+    margin: 0;
+    box-sizing: border-box;
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(47, 179, 202),rgb(180, 184, 185)
+    );
+
+}
+
+.container{
+    background-color: rgb(70, 148, 179);
+    height: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    border-radius: 5px;
+    
+
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input{
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    border-style: none;
+    
+
+
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-size: 1rem;
+
+}
+
+button:hover{
+    background-color: rgb(17, 16, 16);
+}
+
+
+
+.result{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: rgb(255, 0, 0);
+}
+
+
+</style>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +99,11 @@
         <h2> student score App</h2>
         <input type="text" id="name" placeholder="Enter student name">
         <input type="number" id="marks" placeholder="Enter marks">
+
+        <div class="btn">
         <button onclick="addstudent()">Add student</button>
         <button onclick="calres()">calculate avg & topper</button>
+        </div>
 
         <div class="result" id="output"></div>
 
